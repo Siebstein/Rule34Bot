@@ -48,6 +48,7 @@ async def on_message(message):
         url = haeR34(hakusana)
         if url == "virhe":
             await message.channel.send("No images found with your search terms")
+            return
         
         await message.channel.send(url)
     
