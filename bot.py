@@ -39,8 +39,8 @@ async def on_message(message):
         return
     
     if message.content.startswith("!r34"):
-        #content = message.content.replace("!r34", '')
-        print(message.content.replace("!r34", ''))
+        content = message.content.replace("!r34", '')
+        print(content)
         chunks = content.split(' ')
         chunks.pop(0)
         hakusana = ""
