@@ -42,7 +42,7 @@ async def on_message(message):
         content = message.content.replace("!r34", '')
         print(content)
         chunks = content.split(' ')
-        print("chunks: " + chunks)
+        #print("chunks: " + chunks)
         chunks.pop(0)
         hakusana = ""
         indeksi = 0;
