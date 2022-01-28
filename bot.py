@@ -44,9 +44,14 @@ async def on_message(message):
         chunks = content.split(' ')
         chunks.pop(0)
         hakusana = ""
+        indeksi = 0;
         for termi in chunks:
             print(termi)
-            hakusana = hakusana + '_' + termi
+            if(indeksi == 0)
+                hakusana = termi
+                indeksi = indeksi + 1
+            else
+                hakusana = hakusana + '_' + termi
             
         print(hakusana)    
         url = haeR34(hakusana)
