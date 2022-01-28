@@ -41,7 +41,7 @@ async def on_message(message):
     if message.content.startswith("!r34"):
         content = message.content.replace("!r34 ", '')
         content = content.replace("!r34", '')
-        print(content)
+        #print(content)
         chunks = content.split(' ')
         #print("chunks: " + chunks)
         if (chunks[0] == "!r34"):
@@ -50,14 +50,14 @@ async def on_message(message):
         hakusana = ""
         indeksi = 0;
         for termi in chunks:
-            print("termi: " + termi)
+            #print("termi: " + termi)
             if indeksi == 0:
                 hakusana = termi
                 indeksi = indeksi + 1
             else:
                 hakusana = hakusana + '_' + termi
             
-        print("hakusana: " + hakusana)    
+        #print("hakusana: " + hakusana)    
         url = haeR34(hakusana)
         if url == "virhe":
             await message.channel.send("No images found with your search terms")
