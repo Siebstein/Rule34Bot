@@ -47,10 +47,10 @@ async def on_message(message):
         indeksi = 0;
         for termi in chunks:
             print(termi)
-            if(indeksi == 0)
+            if indeksi == 0:
                 hakusana = termi
                 indeksi = indeksi + 1
-            else
+            else:
                 hakusana = hakusana + '_' + termi
             
         print(hakusana)    
