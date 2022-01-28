@@ -44,7 +44,7 @@ async def on_message(message):
         chunks.pop(0)
         hakusana = ""
         for termi in chunks:
-            hakusana = hakusana + termi
+            hakusana = hakusana +'_' +termi
             
         url = haeR34(hakusana)
         if url == "virhe":
