@@ -14,6 +14,12 @@ URL = "https://rule34.xxx/index.php?page=dapi&s=post&q=index&limit=1000&tags="
 
 def haeR34(hakusana):
     formatoitu = hakusana.replace(' ', '+')
+    formatoitu = formatoitu.replace('ä', '%C3%A4')
+    formatoitu = formatoitu.replace('Ä', '%C3%A4')
+    formatoitu = formatoitu.replace('ö', '%C3%B6')
+    formatoitu = formatoitu.replace('Ö', '%C3%B6')
+    formatoitu = formatoitu.replace('å', '%C3%A6')
+    formatoitu = formatoitu.replace('Å', '%C3%A6')
     kokoURL = URL + formatoitu
     file = urllib.request.urlopen(kokoURL)
 #    print(kokoURL)
