@@ -43,7 +43,9 @@ async def on_message(message):
         print(content)
         chunks = content.split(' ')
         #print("chunks: " + chunks)
-        chunks.pop(0)
+        if (chunks[0] == "!r34"):
+            print("pop")
+            chunks.pop(0)
         hakusana = ""
         indeksi = 0;
         for termi in chunks:
