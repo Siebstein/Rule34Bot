@@ -41,10 +41,10 @@ async def on_message(message):
     if message.content.startswith("!r34"):
         content = message.content.replace("!r34", '')
         chunks = content.split(' ')
-        chunks.pop(0)
+        #chunks.pop(0)
         hakusana = ""
         for termi in chunks:
-            hakusana = hakusana +'_' +termi
+            hakusana = hakusana + '_' +termi
             
         url = haeR34(hakusana)
         if url == "virhe":
